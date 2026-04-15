@@ -1,8 +1,6 @@
 # 1- import the random module
 
 import random
-import pandas as pd
-
 # 2- create the subjects of headline
 
 while True:
