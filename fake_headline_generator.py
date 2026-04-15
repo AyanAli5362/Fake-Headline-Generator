@@ -3,8 +3,8 @@
 import random
 # 2- create the subjects of headline
 
-while True:
-    print("Choose Field for fake headline Generates")
+while True: # outer loop used for menu
+    print("\nChoose Field for fake headline Generates")
     print("1. Bollywood related")
     print("2. Politics related")
     print("3. Sports related")
@@ -19,18 +19,17 @@ while True:
 
 # 3 start the headline generation loop
 
-        while True:
+        while True: # inner loop used for headline generator
             subject = random.choice(bollywood)
             action = random.choice(bollywood_actions)
             place_or_thing = random.choice(bollywood_place_or_things)
 
-            headline = f"BREAKING NEWS: {subject} {action} {place_or_thing} "
+            headline = f" BREAKING NEWS: {subject} {action} {place_or_thing} "
             print("\n" + headline)
 
-            user_input = input("\nDo you want geneate another headline? (yes/no): ".strip().lower())
+            user_input = input("\nDo you want geneate another headline? (yes/no): ").strip().lower()
             if user_input == "no":
                 break
-        print("Thanks for using the Fake News Headline Generator. Have a fun day.....Program Closed")
     
     elif Field == 2:
         politics = ["Today, Parliament", "MP's", "Goverment", "Oppositon", "Minister"]
@@ -45,11 +44,10 @@ while True:
             headline = f"BREAKING NEWS: {subject} {action} {place_or_thing} "
             print("\n" + headline)
 
-            user_input = input("\nDo you want geneate another headline? (yes/no): ".strip().lower())
+            user_input = input("\nDo you want geneate another headline? (yes/no): ").strip().lower()
             if user_input == "no":
                 break
 
-        print("Thanks for using the Fake News Headline Generator. Have a fun day.....Program Closed")
 
     elif Field == 3:
         sports = ["Virat kohli", "IPL", "Neeraj ", "India", "Some players"]
@@ -64,11 +62,10 @@ while True:
             headline = f"BREAKING NEWS: {subject} {action} {place_or_thing} "
             print("\n" + headline)
 
-            user_input = input("\nDo you want geneate another headline? (yes/no): ".strip().lower())
+            user_input = input("\nDo you want geneate another headline? (yes/no): ").strip().lower()
             if user_input == "no":
                 break
         
-        print("Thanks for using the Fake News Headline Generator. Have a fun day.....Program Closed")
 
 
     elif Field == 4:
@@ -84,12 +81,15 @@ while True:
             headline = f"BREAKING NEWS: {subject} {action} {place_or_thing} "
             print("\n" + headline)
 
-            user_input = input("\nDo you want geneate another headline? (yes/no): ".strip().lower())
+            user_input = input("\nDo you want geneate another headline? (yes/no):").strip().lower()
             if user_input == "no":
                 break
 
-        print("Thanks for using the Fake News Headline Generator. Have a fun day.....Program Closed")
     
     else:
         print("Invalid Input")
+        break
+
+    print("\nThanks for using the Fake News Headline Generator. Have a fun day.....Program Closed")
+
         
